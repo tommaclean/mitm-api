@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get '/fav_meetups/all', to: 'favorite_meetups#all'
       post '/fav_meetups', to: 'favorite_meetups#create'
       delete '/fav_meetups/:id', to: 'favorite_meetups#destroy'
+      resources :welcome
       resources :meetups
       resources :users
       resources :favorite_meetups
