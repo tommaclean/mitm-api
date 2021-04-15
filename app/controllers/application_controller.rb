@@ -5,7 +5,7 @@ class ApplicationController < ActionController::API
     end
 
     def secret
-        ENV["secret"]
+        ENV["pegasustaxfree"]
     end 
 
     def token
